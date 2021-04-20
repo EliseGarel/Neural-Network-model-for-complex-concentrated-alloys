@@ -6,10 +6,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import os
-from IPython.display import display, Markdown
 import fidle.pwk as ooo
 
-def get_model_v1(shape,nb_layers,list_neurones,neurones_sortie,list_act,f_opt,crit_loss,list_metrics):
+def get_model(shape,nb_layers,list_neurones,neurones_sortie,list_act,f_opt,crit_loss,list_metrics):
        model = keras.models.Sequential()
        for i in range (0,nb_layers):
            model.add(keras.layers.Dense(list_neurones[i], activation=list_act[i], input_shape=shape))
@@ -61,7 +60,7 @@ def regression (list_args):
     x_test,  y_test  = np.array(x_test),  np.array(y_test)
     
     #Modele
-    model=get_model_v1(shape,nb_layers,list_neurones,neurones_sortie,list_act,f_opt,crit_loss,list_metrics)
+    model=get_model(shape,nb_layers,list_neurones,neurones_sortie,list_act,f_opt,crit_loss,list_metrics)
    
     model.summary()
     os.makedirs('./'+best_model_dir,   mode=0o750, exist_ok=True)

@@ -1,10 +1,10 @@
 # Neural-Network-model-for-complex-concentrated-alloys
 Combinatorial design of complex concentrated alloys: a rational approach in thin film
 
-Database content:
+Database content::\
 The databases are associating a composition measure by EDX with hardness and elastic modulus measurements. For Each composition, 5 nanoindentation test were carried out.
 
-The databases: 
+The databases: :\
   Raw_data                          : acquired data without any treatment
   Raw_data_corrected                : acquired data with hardness H an elastic modulus E correction with respect to calibration measurment on fused silica
   Raw_data_threshold_with_outliers  : corrected data with a H and E threshold (no negative or zero values)

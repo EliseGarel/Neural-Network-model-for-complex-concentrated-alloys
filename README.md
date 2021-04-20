@@ -5,7 +5,7 @@ Combinatorial design of complex concentrated alloys: a rational approach in thin
 The databases are associating a composition measured by EDX with hardness and elastic modulus measurements. For Each composition, 5 nanoindentation test were carried out.
 
 
-| Zr (%at) |  Nb (%at) | Ti (%at) | Mo (%at) | Cr(%at) | Zr (%m) |  Nb (%m) | Ti (%m) | Mo (%m) | Cr(%m)   | E (GPa) | H (GPa) |                
+| Zr (%at) |  Nb (%at) | Ti (%at) | Mo (%at) | Cr (%at) | Zr (%m) |  Nb (%m) | Ti (%m) | Mo (%m) | Cr (%m)   | E (GPa) | H (GPa) |                
 |----------|-----------|----------|----------|---------|---------|---------|-----------|----------|----------|---------|---------|
 |          |           |          |          |         |         |         |           |          |          |         |          |
 |          |           |          |          |         |         |         |           |          |          |         |          |

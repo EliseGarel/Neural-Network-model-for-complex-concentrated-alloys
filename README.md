@@ -6,8 +6,9 @@ The databases are associating a composition measured by EDX with hardness and el
 
 
 |   Composition (%at)    |   Compositions (%m)    | E (GPa) | H (GPa) |                
-|------------------------|------------------------|---------|---------|
-|                        |                        |         |         |
+|----+----+----+----+----|------------------------|---------|---------|
+| Zr | Nb | Mo | Ti | Cr | Zr | Nb | Mo | Ti | Cr |         |         |
+|
 
 
 ## The databases:

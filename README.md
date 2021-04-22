@@ -1,6 +1,9 @@
 # Neural-Network-model-for-complex-concentrated-alloys
 Combinatorial design of complex concentrated alloys: a rational approach in thin film
 
+Co-author: Raphaël Boichot : https://github.com/Raphael-Boichot
+
+
 ## Databases content:
 The databases are associating a composition measured by EDX with hardness and elastic modulus measurements. For Each composition, 5 nanoindentation test were carried out.
 

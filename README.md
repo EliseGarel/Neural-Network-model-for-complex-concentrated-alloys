@@ -41,3 +41,5 @@ It contains:
 - best_model_dir: directory in which the best model can be savec
 - best_model_name: name of the .h5 file containing the best model 
     
+``regression`` calls ``get_model`` with the arguments: shape,nb_layers,list_neurones,output_neurones,list_act,f_opt,crit_loss,list_metrics
+

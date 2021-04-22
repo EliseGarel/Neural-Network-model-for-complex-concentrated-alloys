@@ -30,14 +30,14 @@ It contains:
 - shape : input layer shape 
 - input_list : header of the database columns containing the input data
 - output_list : headers of the database columns containing the output data
-- nb_layers
-- list_neurones
-- neurones_sortie
-- list_act
-- f_opt
-- crit_loss
-- list_metrics
-- nb_epochs
-- best_model_dir
-- best_model_name
+- nb_layers : number of hidden layers
+- list_neurones : number of neurones per hidden layers (eg : [5 , 10] is for a 2 layers networks with 5 and 10 neurones)
+- output_neurones: number of outputs
+- list_act: list of activation function for the different layers
+- f_opt : optmisation function 
+- crit_loss : loss criteria (eg: RMSE, MAE...)
+- list_metrics: list of metrics for network evaluation
+- nb_epochs: numper of epoches
+- best_model_dir: directory in which the best model can be savec
+- best_model_name: name of the .h5 file containing the best model 
     

@@ -40,6 +40,8 @@ It contains:
 - nb_epochs: numper of epoches
 - best_model_dir: directory in which the best model can be savec
 - best_model_name: name of the .h5 file containing the best model 
-    
-``regression`` calls ``get_model`` with the arguments: shape,nb_layers,list_neurones,output_neurones,list_act,f_opt,crit_loss,list_metrics
+
+It return the x and y values used fir train and test. The best model is saved in the best_model_dir directory. \ \ 
+
+``regression`` calls ``get_model`` with the arguments: shape,nb_layers,list_neurones,output_neurones,list_act,f_opt,crit_loss,list_metrics. It return the neural network model.  
 

@@ -3,7 +3,7 @@
 ##################################################
 
 ####################################################################################################
-# 1) Import libraries
+## 1) Import libraries
 
 import tensorflow as tf
 from tensorflow import keras
@@ -18,7 +18,7 @@ import modele_fit as mf
 from pathos.multiprocessing import ProcessingPool as Pool
 
 ######################################################################################################
-# 2) Parameters of the neural network
+## 2) Parameters of the neural network
 
 frac_train=0.8
 shape=(5,) 
@@ -57,12 +57,14 @@ best_model_name=['best_Raw_data',
 
 
 ######################################################################################################
-# 3) Run models
+## 3) Run models
 
 list_x_test=[]
 list_y_test=[]
 list_x_train=[]
 list_y_train=[]
+
+# Regression on the 5 different databases
 for i in range (0,5):
     x_test, y_test, x_train, y_train=mf.regression ([filename[i],
                                                      frac_train, 
@@ -86,10 +88,14 @@ for i in range (0,5):
 
 
 ######################################################################################################
-# 4) Evaluate best models
+## 4) Evaluate best models
 
 loaded_model=[]
 score=[]
+
+# Load the best model for each database as well as the x and y values used for test
+# Score iscontaining the loss, mae and mse. 
+
 for i in range (0,5):
     loaded_model.append(keras.models.load_model('./'+best_model_dir[i]+'/'+best_model_name[i]+'.h5'))
     loaded_model[i].summary()
@@ -99,11 +105,11 @@ for i in range (0,5):
     print('Test mae  : {:5.4f}'.format(score[1]))
     print('Test mse  : {:5.4f}'.format(score[1]))
     
-    
-
 ######################################################################################################   
-#5) Plot predictions vs experimental for all databases + residual historgram
+## 5) Plot predictions vs experimental for all databases + residual historgram
 
+# For the 5 databases, we plot the values of model predictions vs experimental values, for train and test values. 
+# The residuals are the difference between these prediction and experimental values. The histogram show the distribution of these residuals.
 for i in range (0,5):
 
     predictions_test = loaded_model[i].predict(list_x_test[i])

@@ -48,6 +48,8 @@ It return the x and y values used fir train and test. The best model is saved in
 
 ``regression`` calls ``get_model`` with the arguments: shape,nb_layers,list_neurones,output_neurones,list_act,f_opt,crit_loss,list_metrics. It return the neural network model.  
 
+### ``Bets_network``
+
 ### ``Regression_databases``
 
-
+The set of parameters for neural network model for the different databases are chosen by the user. The``regression`` function allows to save the best models for each set of data. The best models are then evaluated.  

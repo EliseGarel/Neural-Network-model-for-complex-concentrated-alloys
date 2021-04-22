@@ -48,3 +48,4 @@ It return the x and y values used fir train and test. The best model is saved in
 
 ``regression`` calls ``get_model`` with the arguments: shape,nb_layers,list_neurones,output_neurones,list_act,f_opt,crit_loss,list_metrics. It return the neural network model.  
 
+### Regression 

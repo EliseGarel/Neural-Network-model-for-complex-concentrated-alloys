@@ -6,7 +6,7 @@ In this Readme, the Python and Matlab configurations needed are described as a s
 
 ## Python
 Python 3.8 was used to develop the neural networks models.\
-Installing the missing package can be done through anaconda with conda install <package> or through pip install <package>. One should install: 
+Installing the missing package can be done through anaconda with conda install <package> or through pip install <package>. One should probably add: 
   - ``tensorflow`` : contains ``keras`` package, the functions of which allow to build a neural network models and to train it
   - ``pathos``: allow to execute task with parallel pool
 
